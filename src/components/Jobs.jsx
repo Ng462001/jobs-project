@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // components/Jobs.jsx
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -34,6 +35,43 @@ const Jobs = () => {
         method: "Get",
         headers: { Authorization: `Bearer ${token}` }
       };
+=======
+import { useEffect, useState } from "react"
+import JobAllSection from "./JobAllSection"
+import JobSideBar from "./JobSideBar"
+import Navbar from "./Navbar"
+import Cookies from "js-cookie"
+import ScrollToTop from "./ScrollToTop"
+import "../css/jobs.css"
+
+const Jobs = () => {
+  const [allValues, setValues] = useState({
+    jobsArr: [],
+    empType: [],
+    minPackage: "",
+    searchIn: ""
+  })
+  const [loading, setLoading] = useState(false)
+  const [emaptyData, setEmptyData] = useState(0)
+
+  useEffect(() => {
+
+    const token = Cookies.get("jwt-token");
+
+    const fetchJobs = async () => {
+
+      const { empType, minPackage, searchIn } = allValues;
+
+      const api = `https://apis.ccbp.in/jobs?employment_type=${empType}&minimum_package=${minPackage}&search=${searchIn}`;
+
+      const options = {
+        method: "Get",
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      }
+
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
       try {
         setLoading(true);
         const response = await fetch(api, options);
@@ -46,17 +84,28 @@ const Jobs = () => {
       } catch (error) {
         console.log(error);
       }
+<<<<<<< HEAD
     };
     fetchJobs();
   }, [allValues.searchIn, allValues.empType, allValues.minPackage]);
 
   const getUserIn = (e) => {
+=======
+    }
+    fetchJobs();
+
+  }, [allValues.searchIn, allValues.empType, allValues.minPackage]);
+
+  const getUserIn = (e) => {
+
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     if (e.key === "Enter") {
       setValues({ ...allValues, searchIn: e.target.value });
     }
     if (e.target.value === "") {
       setValues({ ...allValues, searchIn: "" });
     }
+<<<<<<< HEAD
   };
 
   const handleChangeEmpType = (e) => {
@@ -71,11 +120,28 @@ const Jobs = () => {
   const handleChangeSalary = (e) => {
     setValues({ ...allValues, minPackage: e.target.value });
   };
+=======
+  }
+
+  const handleChangeEmpType = (e) => {
+    const { value, checked } = e.target
+    if (checked) {
+      setValues({ ...allValues, empType: [...allValues.empType, value] })
+    } else {
+      setValues({ ...allValues, empType: allValues.empType.filter(eachType => eachType !== value) })
+    }
+  }
+
+  const handleChangeSalary = (e) => {
+    setValues({ ...allValues, minPackage: e.target.value });
+  }
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
 
   return (
     <>
       <Navbar />
       <ScrollToTop />
+<<<<<<< HEAD
       <div className="jobs-page">
         <div className="jobs-container">
           <div className="jobs-sidebar">
@@ -116,11 +182,41 @@ const Jobs = () => {
                 ))}
               </div>
             )}
+=======
+      <div className="container mt-3">
+        <div className="row">
+          <div className="col-12 col-lg-4 col-md-5 p-3">
+            <JobSideBar changeEmpType={handleChangeEmpType} changeSalary={handleChangeSalary} />
+          </div>
+          <div className="col-12 col-lg-8 col-md-7 p-3">
+            <input onKeyUp={getUserIn} type="search" className='form-control w-100 mb-3' id="search" placeholder='Please enter you job' />
+            {loading ?
+              <div className='d-flex justify-content-center align-items-center h-75'>
+                <div className='loader'></div>
+              </div>
+              :
+              emaptyData === 0 ?
+                <div className='d-flex flex-column justify-content-center align-items-center h-75'>
+                  <img src="/images/no-jobs-found.png" alt="images" className='w-50' />
+                  <h2 className='text-primary fw-bold text'>No Jobs Found</h2>
+                </div>
+                :
+                allValues.jobsArr.map(eachJob => <JobAllSection key={eachJob.id} jobsItem={eachJob} />)
+            }
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
           </div>
         </div>
       </div>
     </>
+<<<<<<< HEAD
   );
 };
 
 export default Jobs;
+=======
+  )
+}
+
+export default Jobs
+
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* css/jobs.css */
 .jobs-page {
     min-height: 100vh;
@@ -128,4 +129,17 @@
     .jobs-main {
         order: 1;
     }
+=======
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+.text {
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 6px;
+    word-spacing: 3px;
+    color: rgb(61, 148, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
 }

@@ -12,6 +12,10 @@ const App = () => {
 
   return (
     <>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
       <Routes>
         <Route path="/" element={<ProtectedRoute Component={Home} />} />
         <Route path="/jobs" element={<ProtectedRoute Component={Jobs} />} />
