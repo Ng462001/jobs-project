@@ -1,5 +1,4 @@
 .jobDec {
-<<<<<<< HEAD
     text-align: left;
     color: var(--text-secondary);
     line-height: 1.7;
@@ -10,16 +9,6 @@
     width: 60px;
     aspect-ratio: 4;
     --_g: no-repeat radial-gradient(circle closest-side, var(--accent-color) 90%, transparent);
-=======
-    text-align: justify;
-}
-
-.loader {
-
-    width: 60px;
-    aspect-ratio: 4;
-    --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
->>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     background:
         var(--_g) 0% 50%,
         var(--_g) 50% 50%,
@@ -42,7 +31,6 @@
     }
 }
 
-<<<<<<< HEAD
 .jobDetails-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
@@ -120,39 +108,11 @@
     .jobDetails-card {
         padding: 24px;
         margin: 0 15px;
-=======
-@media screen and (max-width: 768px) {
-    .jobDetails {
-        width: 100% !important;
-        margin: 0px 10px !important;
-    }
-
-    .jobDetails img {
-        width: 40%;
->>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     }
 
     .similarJobs {
         width: 100% !important;
-<<<<<<< HEAD
         padding: 0 15px;
-=======
-        display: flex !important;
-        flex-direction: column !important;
->>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
-    }
-
-    .similarjobsLink {
-        width: 100% !important;
-    }
-<<<<<<< HEAD
-=======
-
-}
-
-@media screen and (max-width: 1024px) {
-    .similarJobs {
-        width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
     }
@@ -160,11 +120,4 @@
     .similarjobsLink {
         width: 100% !important;
     }
-
-    .similarjobsLink img {
-        width: 40% !important;
-
-    }
-
->>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
 }

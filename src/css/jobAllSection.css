@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* css/jobAllSection.css */
 .job-card-link {
     text-decoration: none;
@@ -145,41 +144,4 @@
 
 .view-icon {
     font-size: 12px;
-=======
-.jobTitle {
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.ratingIcon {
-    margin-left: 10px;
-    margin-top: -5px;
-    color: rgb(199, 232, 70);
-}
-
-.rating {
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-.locationIcon {
-    margin-right: 5px;
-    margin-top: -3px;
-    color: rgb(82, 88, 58);
-}
-
-.jobTypeIcon {
-    margin-right: 5px;
-    margin-top: -3px;
-    color: rgb(82, 88, 58);
-}
-
-.loction {
-    margin-right: 20px;
-}
-
-.jobCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
->>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
 }
