@@ -1,0 +1,155 @@
+/* css/jobSideBar.css */
+.sidebar-container {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-container.dark {
+    color: var(--dark-text-primary);
+}
+
+.sidebar-container.light {
+    color: var(--light-text-primary);
+}
+
+/* Profile Card */
+.profile-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.profile-card.dark {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.profile-card.light {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-avatar {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background: var(--accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-bio {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Filter Sections */
+.filter-section {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.filter-section.dark {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.filter-section.light {
+    background: white;
+}
+
+.filter-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.filters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-option:hover {
+    transform: translateX(4px);
+}
+
+.filter-option input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+.filter-label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filter-option:hover .filter-label {
+    color: var(--primary-color);
+}
+
+
+/* css/jobSideBar.css */
+
+/* Dark Theme */
+.profile-card,
+.filter-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--dark-border-color);
+}
+
+.profile-name {
+    background: var(--accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-bio,
+.filter-label {
+    color: var(--dark-text-secondary);
+}
+
+/* Light Theme */
+
+
+
+
+
+
+
+
+
+

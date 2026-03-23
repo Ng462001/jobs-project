@@ -1,0 +1,147 @@
+/* css/jobAllSection.css */
+.job-card-link {
+    text-decoration: none;
+    display: block;
+}
+
+.job-card-modern {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.job-card-modern:hover {
+    transform: translateY(-4px);
+    border-color: rgba(108, 99, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.job-card-modern.dark {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.job-card-modern.light {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job-card-header {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.company-logo-wrapper {
+    flex-shrink: 0;
+}
+
+.company-logo-modern {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: white;
+    padding: 4px;
+}
+
+.job-title-section {
+    flex: 1;
+}
+
+.job-title-modern {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rating-star {
+    color: #ffc107;
+}
+
+.rating-value {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.job-details-modern {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.job-location-type {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.detail-icon {
+    font-size: 14px;
+}
+
+.salary-modern .salary-value {
+    font-weight: 700;
+    color: var(--success-color);
+}
+
+.job-description-modern {
+    margin-bottom: 20px;
+}
+
+.description-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.description-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.view-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: gap 0.3s ease;
+}
+
+.job-card-modern:hover .view-details {
+    gap: 12px;
+}
+
+.view-icon {
+    font-size: 12px;
+}
