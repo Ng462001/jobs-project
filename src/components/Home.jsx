@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 
+
 const Home = () => {
     const navigate = useNavigate();
     const [featuredJobs, setFeaturedJobs] = useState([]);
