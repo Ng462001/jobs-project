@@ -1,4 +1,16 @@
 .jobDec {
+<<<<<<< HEAD
+    text-align: left;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side, var(--accent-color) 90%, transparent);
+=======
     text-align: justify;
 }
 
@@ -7,6 +19,7 @@
     width: 60px;
     aspect-ratio: 4;
     --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     background:
         var(--_g) 0% 50%,
         var(--_g) 50% 50%,
@@ -29,6 +42,85 @@
     }
 }
 
+<<<<<<< HEAD
+.jobDetails-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(20px);
+}
+
+.similar-job-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 24px;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+}
+
+.similar-job-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--accent-color);
+}
+
+.similarjobsLink {
+    display: block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.similarjobsLink:hover {
+    transform: translateY(-5px);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.skills-list li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+}
+
+.skills-list img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.skills-list span {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .jobDetails-card {
+        padding: 24px;
+        margin: 0 15px;
+=======
 @media screen and (max-width: 768px) {
     .jobDetails {
         width: 100% !important;
@@ -37,17 +129,24 @@
 
     .jobDetails img {
         width: 40%;
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     }
 
     .similarJobs {
         width: 100% !important;
+<<<<<<< HEAD
+        padding: 0 15px;
+=======
         display: flex !important;
         flex-direction: column !important;
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
     }
 
     .similarjobsLink {
         width: 100% !important;
     }
+<<<<<<< HEAD
+=======
 
 }
 
@@ -67,4 +166,5 @@
 
     }
 
+>>>>>>> 87b7e8a50e4a3eba55dbea518447bff41b837971
 }
